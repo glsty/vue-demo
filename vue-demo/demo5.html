@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="item in todos">{{item.text}}</li>
+    </ul>
+</div>
+</body>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            todos:[
+                {text:"vue"},
+                {text:"react"},
+                {text:"angular"}
+            ]
+        }
+    })
+</script>
+</html>

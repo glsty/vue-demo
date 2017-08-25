@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <input type="button" v-on:click="changeMsg" value="更改">
+</div>
+</body>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            message:"hello vue!"
+        },
+        methods:{
+            changeMsg(){
+                this.message="hello world!，hello vue"
+            }
+        }
+    })
+</script>
+</html>
